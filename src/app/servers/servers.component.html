@@ -1,0 +1,10 @@
+<div class="col-md-5">
+  <div class="list-group">
+      <a [routerLink]="['/servers', server.id, server.name, server.status]"
+         class="list-group-item" *ngFor="let server of servers">{{server.name}}
+      </a>
+  </div>
+</div>
+
+<!--<app-server></app-server>-->
+<router-outlet></router-outlet>
